@@ -13,4 +13,4 @@ app.get('/api/products/:id', (req, res)=>{
     res.json(product)
 })
 
-app.listen(5000, console.log('running on ecommerce server'))
+app.listen(5000, console.log('running on ecommerce server on 5000'))
