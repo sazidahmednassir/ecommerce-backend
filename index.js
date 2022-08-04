@@ -3,7 +3,7 @@ const products =require('./data/products')
 const app=express()
 const dotenv = require('dotenv')
 
-const PORT=process.env.PORT || 5000;
+const PORT= 5000;
 
 dotenv.config()
 
