@@ -1,11 +1,17 @@
-const express=require('express')
-const products =require('./data/products')
+import dotenv from 'dotenv';
+import express from 'express';
+import products from './data/products.js';
 const app=express()
-const dotenv = require('dotenv')
+
+import connectDB from './config/db.js';
+
+
 
 const PORT= 5000;
 
 dotenv.config()
+
+connectDB()
 
 
 app.get('/', (req, res)=>{
